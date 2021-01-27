@@ -4,35 +4,36 @@ PDFMiner is a text extraction tool for PDF documents.
 This simple script help you to read and extract text from PDF file.<br/>
 
 ### A typical way to parse a PDF file is the following:
+<br>
+<br>
+Create a PDF resource manager object that stores shared resources.
 
-
-```
+```python
 resource_manager = PDFResourceManager()
-```
-> Create a PDF resource manager object that stores shared resources.
 
-```
 fake_file_handle = io.StringIO()
 converter = TextConverter(resource_manager, fake_file_handle, laparams=LAParams())
 page_interpreter = PDFPageInterpreter(resource_manager, converter)
 ```
-> Create a PDF page aggregator object.
-```
+
+Create a PDF page aggregator object.
+
+```python
 with open('C:/Users/Alessandro/Desktop/Sacha Baron Cohen Actor.pdf', 'rb') 
 ```
 > in this row you can insert your route folder to get to the file:<br/>
-In my case, is Disk C, Alessandro folder, in Desktop and the name of Pdf is Sacha Baron Cohen Actor.<br/>
-For have the same result you can copy this code and change the route with your pdf. <br/>
+>In my case, is Disk C, Alessandro folder, in Desktop and the name of Pdf is Sacha Baron Cohen Actor.<br/>
+>For have the same result you can copy this code and change the route with your pdf. <br/>
+<br>
+<br>
+Process each page contained in the document.
 
-```
+```python
 for page in PDFPage.get_pages(fh,
                                   caching=True,
                                   check_extractable=True):
         page_interpreter.process_page(page)
-```
-> Process each page contained in the document.
-
-```
+        
 print(text)
 ```
 > See in output the pdf 
