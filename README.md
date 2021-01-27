@@ -25,8 +25,8 @@ with open('C:/Users/Alessandro/Desktop/Sacha Baron Cohen Actor.pdf', 'rb')
 >In my case, is Disk C, Alessandro folder, in Desktop and the name of Pdf is Sacha Baron Cohen Actor.<br/>
 >For have the same result you can copy this code and change the route with your pdf. <br/>
 <br>
-<br>
-Process each page contained in the document.
+
+Process each page contained in the document and see in output the pdf 
 
 ```python
 for page in PDFPage.get_pages(fh,
@@ -36,7 +36,6 @@ for page in PDFPage.get_pages(fh,
         
 print(text)
 ```
-> See in output the pdf 
 
 
 Sacha Baron Cohen’s Political Cinema 
