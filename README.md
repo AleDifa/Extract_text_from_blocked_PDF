@@ -2,6 +2,7 @@
 
 PDFMiner is a text extraction tool for PDF documents. 
 This simple script help you to read and extract text from PDF file.<br/>
+:hammer:) [see full code project](https://github.com/AleDifa/Extract_text_from_blocked_PDF/blob/main/Read%20o%20Extract%20a%20pdf%20with%20not%20possible%20extract%20text%20with%20Adobe%20Reader.ipynb)
 
 ### A typical way to parse a PDF file is the following:
 <br>
